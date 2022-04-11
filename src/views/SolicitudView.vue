@@ -282,10 +282,15 @@
 </template>
 
 <script>
-import { config } from "../config/config";
+//import { config } from "../config/config";
 // eslint-disable-next-line
 import { createToastInterface } from "vue-toastification";
-const { API_HOST } = config;
+//const { API_HOST } = config;
+
+const API_HOST = process.env.VUE_APP_BACKEND_SERVER_URL; 
+console.log(API_HOST)
+//VUE_APP_BACKEND_SERVER_URL
+
 export default {
   name: "SolicitudView",
 
