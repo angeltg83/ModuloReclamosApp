@@ -17,7 +17,7 @@
     </v-main>
 
     <v-footer app>
-      <strong style="font-size: 11px">Developer by Angel Tigua</strong>
+      <strong style="font-size: 11px">Modulo reclamos</strong>
     </v-footer>
   </v-app>
 </template>
