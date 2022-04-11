@@ -287,6 +287,8 @@ import { config } from "../config/config";
 import { createToastInterface } from "vue-toastification";
 const { API_HOST } = config;
 export default {
+  name: "SolicitudView",
+
   data: () => ({
     snackbar: false,
     message: "Exito",

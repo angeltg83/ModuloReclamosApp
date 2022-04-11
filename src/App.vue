@@ -1,8 +1,5 @@
 <template>
   <v-app>
-    <v-navigation-drawer width="10rem" app v-model="drawer" absolute temporary>
-      nav
-    </v-navigation-drawer>
     
     <v-app-bar absolute color="primary" dense dark elevation="4">
       <v-toolbar-title>
@@ -12,7 +9,7 @@
 
     <v-main>
       <v-container fluid>
-        <router-view />
+       <SolicitudView/>
       </v-container>
     </v-main>
 
@@ -23,8 +20,12 @@
 </template>
 
 <script>
+import SolicitudView from './views/SolicitudView'
 export default {
   name: "App",
+  components:{
+    SolicitudView
+  },
   data() {
     return {
       drawer: null,
